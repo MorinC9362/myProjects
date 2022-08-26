@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+int main()
+{    
+    int mval = 2;
+    int inp;
+    cout<<"enter a number: ";
+    cin>>inp;
+    //input
+    for (inp%mval > 0; inp%mval > 0 && mval <= 0.5*inp; mval = mval + 1){
+   /*if remainder is greater than 0 and less than half of input
+   keep on adding to the modulus value to test for prime numbers*/    
+    }
+    
+    if (inp%mval > 0 || inp == 0 || inp == 1 || inp == 2){
+        cout<<"prime";
+        //if the remainder is greater than 0 prime exceptions for 0 1 2
+    } else {
+     cout<<"noprime";  //if rmdr is 0 noprime
+    }
+
+}
